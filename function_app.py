@@ -7,7 +7,7 @@ import os
 
 app = func.FunctionApp()
 
-@app.timer_trigger(schedule="0 10 23 * * * *", arg_name="myTimer", run_on_startup=False,
+@app.timer_trigger(schedule="0 15 23 * * * *", arg_name="myTimer", run_on_startup=False,
               use_monitor=False) 
 def pattodatebotfunction(myTimer: func.TimerRequest) -> None:
     common_main()
